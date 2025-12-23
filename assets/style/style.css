@@ -1,8 +1,22 @@
-/* Сброс и базовые стили */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* МОБИЛЬНЫЙ ФИКС - принудительное масштабирование */
+@media screen and (max-width: 768px) {
+    html {
+        zoom: 0.5;
+        -moz-transform: scale(0.5);
+        -moz-transform-origin: 0 0;
+    }
+    
+    body {
+        width: 200% !important;
+        transform: scale(0.5);
+        transform-origin: 0 0;
+    }
 }
 
 html {

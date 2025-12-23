@@ -1,19 +1,19 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Автоматически масштабируем на очень маленьких экранах
-    function adjustZoomForMobile() {
-        const isMobile = window.innerWidth < 768;
-        const viewportMeta = document.querySelector('meta[name="viewport"]');
+    // function adjustZoomForMobile() {
+    //     const isMobile = window.innerWidth < 768;
+    //     const viewportMeta = document.querySelector('meta[name="viewport"]');
         
-        if (isMobile && viewportMeta) {
-            // Для мобилок устанавливаем начальный zoom
-            const scale = Math.min(1, window.innerWidth / 1200);
-            viewportMeta.content = `width=1200, initial-scale=${scale}, maximum-scale=5.0, user-scalable=yes`;
-        }
-    }
+    //     if (isMobile && viewportMeta) {
+    //         // Для мобилок устанавливаем начальный zoom
+    //         const scale = Math.min(1, window.innerWidth / 1200);
+    //         viewportMeta.content = `width=1200, initial-scale=${scale}, maximum-scale=5.0, user-scalable=yes`;
+    //     }
+    // }
     
-    // Вызываем при загрузке и изменении размера окна
-    adjustZoomForMobile();
-    window.addEventListener('resize', adjustZoomForMobile);
+    // // Вызываем при загрузке и изменении размера окна
+    // adjustZoomForMobile();
+    // window.addEventListener('resize', adjustZoomForMobile);
     
     // Параллакс эффект для фонового изображения
     const header = document.getElementById('header');
@@ -350,11 +350,3 @@ if (closeBtn) {
   });
 
 });
-
-
-
-
-
-
-
-
