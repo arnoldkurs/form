@@ -265,7 +265,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const registrationForm = document.getElementById('registrationForm');
   const successMessage = document.getElementById('successMessage');
 
-  const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbx1tF2DpEda3zewadmywPtlPGCoSFUKQTSOlblZ7PuCCE1xUUHI00q7MrtLJp_da9Fn/exec';
+  const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwPj2EccI8ylywRnjo2Zf5QCeQi7Mr0SYZVRFh7lA-3JGnEw8IJLyZ0dgRuk9u_sV0/exec';
 
   // ===== МОДАЛКА =====
   function openModal() {
